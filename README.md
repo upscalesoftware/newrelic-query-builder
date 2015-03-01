@@ -42,7 +42,7 @@ $nrql->select([
     ->timeSeries(new TimePeriod(1, TimePeriod::UNIT_HOURS))
 ;
 
-echo $nrql->renderNrql();
+echo $nrql;
 ```
 
 ## Limitations

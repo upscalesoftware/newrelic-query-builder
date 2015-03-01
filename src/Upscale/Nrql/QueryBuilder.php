@@ -207,4 +207,19 @@ class QueryBuilder implements SyntaxRendererInterface
             throw new \LogicException('COMPARE WITH clause requires a SINCE or UNTIL clause.');
         }
     }
+
+    /**
+     * Return rendered query when instance is used in a string context.
+     * Convert exceptions to PHP errors, because exceptions are prohibited for this magic method. 
+     *
+     * @return string 
+     */
+    public function __toString()
+    {
+        try {
+            return $this->renderNrql();
+        } catch (\Exception $e) {
+            trigger_error($e->getMessage(), E_USER_ERROR);
+        }
+    }
 }
