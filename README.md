@@ -43,3 +43,6 @@ Free-format string arguments:
 - Conditions of `WHERE` clause
 - Attribute of `FACET` clause
 
+## License
+
+Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
