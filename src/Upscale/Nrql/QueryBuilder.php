@@ -85,14 +85,14 @@ class QueryBuilder implements SyntaxRendererInterface
     }
 
     /**
-     * Assign FROM clause to specify the event type containing the attributes being queried
+     * Assign FROM clause to specify the event type(s) containing the attributes being queried
      * 
-     * @param string $event Event name
+     * @param array $events Event names
      * @return $this
      */
-    public function from($event)
+    public function from(array $events)
     {
-        return $this->setPart(self::PART_FROM, $event);
+        return $this->setPart(self::PART_FROM, implode(', ', $events));
     }
 
     /**

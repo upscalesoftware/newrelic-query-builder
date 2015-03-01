@@ -19,7 +19,9 @@ $nrql = new QueryBuilder();
 $nrql->select([
         'userAgentName',
     ])
-    ->from('PageView')
+    ->from([
+        'PageView',
+    ])
     ->where('userAgentOS = "Windows"')
     ->facet('countryCode')
     ->limit(20)
