@@ -75,7 +75,7 @@ class QueryBuilder implements SyntaxRendererInterface
     }
 
     /**
-     * Assign SELECT statement to specify what the query is reporting all available attributes
+     * Assign SELECT statement to specify that the query is reporting all available attributes
      * 
      * @return $this
      */
