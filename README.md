@@ -12,13 +12,7 @@ Library is to be installed via [Composer](https://getcomposer.org/) as a project
 {
     "require": {
         "upscale/newrelic-query-builder": "*"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/upscalesoftware/newrelic-query-builder"
-        }
-    ]
+    }
 }
 ```
 
