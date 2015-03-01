@@ -31,3 +31,13 @@ $nrql->select([
 
 echo $nrql->renderNrql();
 ```
+
+## Limitations
+
+Some complex aspects of the NRQL syntax have not been implemented in an object-oriented manner. These include [Aggregator Functions](https://docs.newrelic.com/docs/insights/new-relic-insights/using-new-relic-query-language/nrql-reference#functions), [Math Operators](https://docs.newrelic.com/docs/insights/new-relic-insights/using-new-relic-query-language/nrql-math) and logical operators (`AND`, `OR`, grouping). However, the library allows to utilize as complex expressions as needed in place of string arguments.
+ 
+Free-format string arguments:
+- Attributes of `SELECT` statement, including optional `AS` clause
+- Conditions of `WHERE` clause
+- Attribute of `FACET` clause
+
