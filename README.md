@@ -5,6 +5,23 @@ The New Relic Query Language (NRQL) is an SQL-flavored query language for making
 
 This project is a PHP library for assembling NRQL queries in object-oriented applications. Library implements the official [NRQL specification](https://docs.newrelic.com/docs/insights/new-relic-insights/using-new-relic-query-language/nrql-reference). It offers a "fluent" interface to specify query parts in an arbitrary order. That allows different application parts to influence the query w/o worrying about the query assembly order. Query integrity validation is performed upon rendering. Library provides object-oriented representation for complex elements of NRQL syntax. That enables code completion and avoids typos in contrast to plain text queries.
 
+## Installation
+
+Library is to be installed via [Composer](https://getcomposer.org/) as a project dependency in `composer.json`:
+```yaml
+{
+    "require": {
+        "upscale/newrelic-query-builder": "*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/upscalesoftware/newrelic-query-builder"
+        }
+    ]
+}
+```
+
 ## Usage
 
 The example below demonstrates a query with all available clauses:
