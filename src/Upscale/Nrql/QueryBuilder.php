@@ -181,7 +181,9 @@ class QueryBuilder implements SyntaxRendererInterface
         $this->validate($this->parts);
         $result = '';
         foreach ($this->parts as $name => $value) {
-            $result .= ($result ? ' ' : '') . $name . ' ' . $value;
+            if ($value) {
+                $result .= ($result ? ' ' : '') . $name . ' ' . $value;
+            }
         }
         return $result;
     }
