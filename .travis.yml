@@ -17,7 +17,7 @@ before_install:
   - composer --version
 
 install:
-  - composer install --dev --no-interaction --prefer-source
+  - composer install --no-interaction --prefer-source
 
 script:
   - vendor/bin/phpunit --colors -c tests/phpunit.xml.dist
