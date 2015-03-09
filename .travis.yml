@@ -14,9 +14,10 @@ matrix:
 
 before_install:
   - composer self-update
+  - composer --version
 
 install:
   - composer install --dev --no-interaction --prefer-source
 
 script:
-  - vendor/bin/phpunit -c tests/phpunit.xml.dist
+  - vendor/bin/phpunit --colors -c tests/phpunit.xml.dist
