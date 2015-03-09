@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/upscalesoftware/newrelic-query-builder.svg)](https://travis-ci.org/upscalesoftware/newrelic-query-builder)
+
 Query Builder for NRQL
 ======================
 
